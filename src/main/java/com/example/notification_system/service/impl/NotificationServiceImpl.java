@@ -63,9 +63,7 @@ public class NotificationServiceImpl implements NotificationService {
 
         // Set channel and other details
         notification.setChannel(channel);
-        notification.setNotificationType(notification.getNotificationType());
         notification.setNotificationStatus(NotificationStatus.IN_PROGRESS);
-        notification.setSubject(notification.getSubject());
         notificationRepository.save(notification);
 
 
